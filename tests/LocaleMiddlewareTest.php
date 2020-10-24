@@ -6,8 +6,10 @@
 
 namespace Alltube\Test;
 
-use Alltube\LocaleManager;
-use Alltube\LocaleMiddleware;
+use Alltube\Exception\DependencyException;
+use Alltube\Factory\LocaleManagerFactory;
+use Alltube\Factory\SessionFactory;
+use Alltube\Middleware\LocaleMiddleware;
 use Slim\Container;
 use Slim\Http\Environment;
 use Slim\Http\Request;
@@ -34,11 +36,13 @@ class LocaleMiddlewareTest extends BaseTest
 
     /**
      * Prepare tests.
+     * @throws DependencyException
      */
     protected function setUp(): void
     {
         $this->container = new Container();
-        $this->container['locale'] = LocaleManager::getInstance();
+        $this->container['session'] = SessionFactory::create($this->container);
+        $this->container['locale'] = LocaleManagerFactory::create($this->container);
         $this->middleware = new LocaleMiddleware($this->container);
     }
 
@@ -50,7 +54,6 @@ class LocaleMiddlewareTest extends BaseTest
     protected function tearDown(): void
     {
         $this->container['locale']->unsetLocale();
-        LocaleManager::destroyInstance();
     }
 
     /**

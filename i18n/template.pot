@@ -45,43 +45,55 @@ msgstr ""
 msgid "Generic formats"
 msgstr ""
 
+#: templates/info.tpl:35
+msgid "Best"
+msgstr ""
+
 #: templates/info.tpl:36
+msgid "Remux best video with best audio"
+msgstr ""
+
+#: templates/info.tpl:37
+msgid "Worst"
+msgstr ""
+
+#: templates/info.tpl:42
 msgid "Detailed formats"
 msgstr ""
 
-#: templates/info.tpl:80
+#: templates/info.tpl:86
 msgid "Stream the video through the server"
 msgstr ""
 
-#: templates/info.tpl:86
+#: templates/info.tpl:92
 msgid "Convert into a custom format:"
 msgstr ""
 
-#: templates/info.tpl:87
+#: templates/info.tpl:93
 msgid "Custom format"
 msgstr ""
 
-#: templates/info.tpl:87
+#: templates/info.tpl:93
 msgid "Format to convert to"
 msgstr ""
 
-#: templates/info.tpl:92
+#: templates/info.tpl:98
 msgid "with"
 msgstr ""
 
-#: templates/info.tpl:93
+#: templates/info.tpl:99
 msgid "Bit rate"
 msgstr ""
 
-#: templates/info.tpl:94
+#: templates/info.tpl:100
 msgid "Custom bitrate"
 msgstr ""
 
-#: templates/info.tpl:97
+#: templates/info.tpl:103
 msgid "kbit/s audio"
 msgstr ""
 
-#: templates/info.tpl:101 templates/playlist.tpl:38 templates/password.tpl:11
+#: templates/info.tpl:107 templates/playlist.tpl:38 templates/password.tpl:11
 #: templates/index.tpl:19
 msgid "Download"
 msgstr ""
@@ -94,16 +106,12 @@ msgstr ""
 msgid "More options"
 msgstr ""
 
-#: templates/extractors.tpl:4 controllers/FrontController.php:109
+#: templates/extractors.tpl:4 classes/Controller/FrontController.php:111
 msgid "Supported websites"
 msgstr ""
 
 #: templates/error.tpl:5
 msgid "An error occurred"
-msgstr ""
-
-#: templates/error.tpl:6
-msgid "Please check the URL of your video."
 msgstr ""
 
 #: templates/password.tpl:5
@@ -126,86 +134,83 @@ msgstr ""
 msgid "Audio only (MP3)"
 msgstr ""
 
-#: templates/index.tpl:28
+#: templates/index.tpl:29
 msgid "From"
 msgstr ""
 
-#: templates/index.tpl:31
+#: templates/index.tpl:32
 msgid "to"
 msgstr ""
 
-#: templates/index.tpl:39
+#: templates/index.tpl:41
 msgid "See all supported websites"
 msgstr ""
 
-#: templates/index.tpl:41
+#: templates/index.tpl:43
 msgid "Drag this to your bookmarks bar:"
 msgstr ""
 
-#: templates/index.tpl:43
+#: templates/index.tpl:45
 msgid "Bookmarklet"
 msgstr ""
 
-#: classes/Config.php:156
-msgid "Best"
-msgstr ""
-
-#: classes/Config.php:157
-msgid "Remux best video with best audio"
-msgstr ""
-
-#: classes/Config.php:158
-msgid "Worst"
-msgstr ""
-
-#: controllers/DownloadController.php:63 controllers/FrontController.php:164
+#: classes/Controller/DownloadController.php:64
+#: classes/Controller/FrontController.php:166
 msgid "Wrong password"
 msgstr ""
 
-#: controllers/DownloadController.php:68
+#: classes/Controller/DownloadController.php:69
 msgid "Conversion of playlists is not supported."
 msgstr ""
 
-#: controllers/DownloadController.php:75
+#: classes/Controller/DownloadController.php:76
 msgid "Conversion of M3U8 files is not supported."
 msgstr ""
 
-#: controllers/DownloadController.php:81
+#: classes/Controller/DownloadController.php:82
 msgid "Conversion of DASH segments is not supported."
 msgstr ""
 
-#: controllers/FrontController.php:63
+#: classes/Controller/FrontController.php:65
 msgid ""
 "Easily download videos from Youtube, Dailymotion, Vimeo and other websites."
 msgstr ""
 
-#: controllers/FrontController.php:110
+#: classes/Controller/FrontController.php:112
 msgid ""
 "List of all supported websites from which Alltube Download can extract video "
 "or audio files"
 msgstr ""
 
-#: controllers/FrontController.php:136
+#: classes/Controller/FrontController.php:138
 msgid "Password prompt"
 msgstr ""
 
-#: controllers/FrontController.php:138
+#: classes/Controller/FrontController.php:140
 msgid ""
 "You need a password in order to download this video with Alltube Download"
 msgstr ""
 
-#: controllers/FrontController.php:172
+#: classes/Controller/FrontController.php:174
 msgid "Video download"
 msgstr ""
 
-#: controllers/FrontController.php:174
+#: classes/Controller/FrontController.php:176
 msgid "Download video from @extractor"
 msgstr ""
 
-#: controllers/FrontController.php:180
+#: classes/Controller/FrontController.php:182
 msgid "Download @title from @extractor"
 msgstr ""
 
-#: controllers/FrontController.php:253
+#: classes/Controller/FrontController.php:255
 msgid "Error"
+msgstr ""
+
+#: classes/Controller/FrontController.php:271
+msgid "Page not found"
+msgstr ""
+
+#: classes/Controller/FrontController.php:282
+msgid "Method not allowed"
 msgstr ""
